@@ -1,0 +1,21 @@
+{
+  "name": "krishakflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "KisanFlow — Smart Procurement. Less Waiting. More Transparency.",
+  "workspaces": [
+    "apps/mobile",
+    "apps/admin",
+    "packages/shared"
+  ],
+  "scripts": {
+    "mobile": "npm run dev --workspace=apps/mobile",
+    "admin": "npm run dev --workspace=apps/admin",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
