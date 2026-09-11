@@ -5,16 +5,16 @@ export default function OperatorLayout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: '#e76f51' },
+        headerStyle: { backgroundColor: '#c85a17' },
         headerTintColor: '#ffffff',
-        headerTitleStyle: { fontWeight: 'bold' },
+        headerTitleStyle: { fontWeight: '700', fontSize: 18 },
+        headerBackTitle: 'Roles',
       }}
     >
       <Stack.Screen
         name="index"
         options={{
-          title: 'Assisted-Service Operator',
-          headerBackTitle: 'Roles',
+          title: 'Assisted Service',
         }}
       />
     </Stack>

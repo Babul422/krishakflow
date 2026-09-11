@@ -5,16 +5,16 @@ export default function FarmerLayout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: '#2d6a4f' },
+        headerStyle: { backgroundColor: '#1b4332' },
         headerTintColor: '#ffffff',
-        headerTitleStyle: { fontWeight: 'bold' },
+        headerTitleStyle: { fontWeight: '700', fontSize: 18 },
+        headerBackTitle: 'Roles',
       }}
     >
       <Stack.Screen
         name="index"
         options={{
-          title: 'Farmer Portal',
-          headerBackTitle: 'Roles',
+          title: 'Farmer Home',
         }}
       />
     </Stack>

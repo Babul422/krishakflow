@@ -5,18 +5,19 @@ import React from 'react';
 export default function RootLayout() {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="#1b4332" />
       <Stack
         screenOptions={{
           headerStyle: { backgroundColor: '#1b4332' },
           headerTintColor: '#ffffff',
-          headerTitleStyle: { fontWeight: 'bold' },
+          headerTitleStyle: { fontWeight: '700', fontSize: 18 },
+          animation: 'slide_from_right',
         }}
       >
         <Stack.Screen
           name="index"
           options={{
-            title: 'KisanFlow',
+            headerShown: false,
           }}
         />
         <Stack.Screen

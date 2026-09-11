@@ -7,14 +7,14 @@ export default function OfficerLayout() {
       screenOptions={{
         headerStyle: { backgroundColor: '#1d3557' },
         headerTintColor: '#ffffff',
-        headerTitleStyle: { fontWeight: 'bold' },
+        headerTitleStyle: { fontWeight: '700', fontSize: 18 },
+        headerBackTitle: 'Roles',
       }}
     >
       <Stack.Screen
         name="index"
         options={{
-          title: 'Procurement Officer Portal',
-          headerBackTitle: 'Roles',
+          title: 'Officer Dashboard',
         }}
       />
     </Stack>
