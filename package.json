@@ -1,0 +1,29 @@
+{
+  "name": "krishakflow",
+  "version": "0.1.0",
+  "private": true,
+  "description": "KisanFlow — Intelligent crop procurement, slot booking, and queue management platform",
+  "workspaces": [
+    "apps/mobile",
+    "apps/admin",
+    "packages/shared"
+  ],
+  "scripts": {
+    "start:mobile": "npm run --workspace=apps/mobile start",
+    "dev:mobile": "npm run --workspace=apps/mobile dev",
+    "dev:admin": "npm run --workspace=apps/admin dev",
+    "build:admin": "npm run --workspace=apps/admin build",
+    "start:admin": "npm run --workspace=apps/admin start",
+    "typecheck": "npm run --workspaces --if-present typecheck"
+  },
+  "keywords": [
+    "kisanflow",
+    "krishakflow",
+    "sih",
+    "agriculture",
+    "procurement",
+    "queue-management"
+  ],
+  "author": "KisanFlow Team",
+  "license": "UNLICENSED"
+}
